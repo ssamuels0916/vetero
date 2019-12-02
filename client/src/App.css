@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#main {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #485683;
+}
+
+#main > header {
+  padding-top: 2rem;
+}
+
+#main > header > h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+form#get-temperature {
+  width: 40vw;
+}
+
+@media only screen and (max-width: 768px) {
+  form#get-temperature {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 8rem;
+    width: 80vw;
+  }
+}
+
+.field:first-child > input {
+  margin-left: 1rem;
+  flex: 4;
+  outline: none;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+label,input { font-size: 1rem; }
+
+label { align-self: center; }
+
+#temperature {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  border: 1px solid #313c5b;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: #313c5b;
+  flex: 2;
+}
+
+.button:first-child {
+  margin-right: 0.25rem;
+}
+
+.weather {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.weather > p {
+  font-size: 1.5rem;
+}
+
+.weather > h2, p {
+  margin-bottom: 1rem;
+}
+
+.weather > .celcius {
+  font-size: 2.5rem;
+}
